@@ -11,5 +11,12 @@
     "test:dev": "jest --watchAll --verbose"
   },
   "author": "Grand Circus Detroit",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.4",
+    "nodemon": "^2.0.7",
+    "ts-node": "^10.0.0"
+  },
+  "dependencies": {}
 }
