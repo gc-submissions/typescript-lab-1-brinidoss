@@ -7,11 +7,13 @@ const products : Product[] = [{name: 'fountain pen', price: 80}, {name: 'noteboo
 
 export function calcAverageProductPrice (products: Product[]) : number {
     let total = 0;
+    let average = 0;
     products.forEach((product) => {
         total = total + product.price;
+        average = total/products.length;
     });
 
-    return total;
+    return average;
     //still need to divide
 }
 

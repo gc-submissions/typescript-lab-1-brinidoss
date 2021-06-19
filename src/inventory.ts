@@ -1,6 +1,6 @@
 import { Product }  from './products';
 
-interface InventoryItem {
+export interface InventoryItem {
     product: Product;
     quantity : number;
 }
@@ -26,7 +26,7 @@ const inventory : InventoryItem[] = [
     },  
 ]
 
-function calcInventoryValue (inventory: InventoryItem[]) : number {
+export function calcInventoryValue (inventory: InventoryItem[]) : number {
     let total = 0;
     inventory.forEach((item) => {
         total = total + (item.product.price * item.quantity);
