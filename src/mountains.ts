@@ -9,19 +9,20 @@ const mountains : Mountain[] = [{name: 'Kilimanjaro', height: 19341}, {name: 'Ev
 
 
 export function findNameOfTallestMountain (mountains: Mountain[]) : string {
-    let tallestMountain = mountains[0];
-    // if (!mountains) {
-    //     return "nothing";
-    // } else {
-    for (let i=0; i < mountains.length; i ++) {
-        if (mountains[i].height > tallestMountain.height) {
-            tallestMountain = mountains[i];
-        }
-    }
-    return tallestMountain.name;
-   }
-//}
-    let myTallestMountain = findNameOfTallestMountain(mountains);
+   let tallestMountain = mountains[0]; 
 
-//console.log(findNameOfTallestMountain());
+        for (let i=0; i < mountains.length; i ++) {
+            
+            if (mountains[i].height > tallestMountain.height) {
+                tallestMountain = mountains[i];
+            }
+        }
+     return tallestMountain.name;
+    }
+
+ 
+
+
+let myTallestMountain = findNameOfTallestMountain(mountains);
+
 console.log(myTallestMountain);

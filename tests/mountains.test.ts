@@ -1,6 +1,6 @@
 import { findNameOfTallestMountain } from "../src/mountains";
 
-describe.skip("findNameOfTallestMountain", () => {
+describe("findNameOfTallestMountain", () => {
   test("middle mountain", () => {
     const name = findNameOfTallestMountain([
       { name: "Kilimanjaro", height: 19341 },

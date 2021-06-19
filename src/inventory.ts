@@ -28,11 +28,17 @@ const inventory : InventoryItem[] = [
 
 export function calcInventoryValue (inventory: InventoryItem[]) : number {
     let total = 0;
-    inventory.forEach((item) => {
+    if (inventory == []) {
+        return 0;
+    } else {
+        inventory.forEach((item) => {
         total = total + (item.product.price * item.quantity);
     });
     return total;
+    }
 }
+
+console.log(calcInventoryValue([]));
 
 let myInventoryValue = calcInventoryValue(inventory);
 

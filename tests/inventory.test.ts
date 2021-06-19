@@ -1,6 +1,6 @@
 import { calcInventoryValue } from "../src/inventory";
 
-describe.skip("calcInventoryValue", () => {
+describe("calcInventoryValue", () => {
   test("three products", () => {
     const value: number = calcInventoryValue([
       { product: { name: "apples", price: 5 }, quantity: 4 },
